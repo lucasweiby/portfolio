@@ -1,0 +1,23 @@
+body {
+    background-color: #000;
+    height: 1000px;
+}
+
+.nav-hide {
+    display: none;
+    opacity: 1;
+    transition: opacity .6s ease-in-out;
+    -moz-transition: opacity .6s ease-in-out;
+    -webkit-transition: opacity .6s ease-in-out;
+}
+
+.nav-show {
+    display: block;
+    position: fixed;
+    background: firebrick;
+    height: 50px;
+    width: 100%;
+    transition: opacity .6s ease-in-out;
+    -moz-transition: opacity .6s ease-in-out;
+    -webkit-transition: opacity .6s ease-in-out;
+}
