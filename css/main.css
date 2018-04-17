@@ -1,8 +1,14 @@
-@import url("../fonts/stylesheet.css");
+@import url("../fonts/league/stylesheet.css");
+@import url("../fonts/glacial/stylesheet.css");
 body {
   background-color: #d10000;
   height: 2000px;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
+
+.container {
+  width: 100%;
+  margin: 0 10px; }
 
 .nav-hide {
   display: none;
@@ -26,8 +32,8 @@ body {
     height: auto;
     padding: 5px 0 0 0; }
   .nav-show .nav {
-    margin: 0;
-    float: right; }
+    float: right;
+    margin: 0 20px !important; }
     .nav-show .nav .list {
       display: inline-block;
       font-family: "League Spartan";
@@ -41,5 +47,38 @@ body {
         .nav-show .nav .list a:hover {
           background-color: #d10000;
           color: #fff; }
+
+#banner .banner {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh; }
+  #banner .banner .title {
+    padding-top: 25vh; }
+    #banner .banner .title h1, #banner .banner .title h4 {
+      text-align: center;
+      color: #d10000;
+      margin: 0;
+      font-family: "League Spartan";
+      text-transform: uppercase; }
+    #banner .banner .title h1 {
+      font-size: 10vw; }
+    #banner .banner .title h4 {
+      font-size: 2vw; }
+
+#frase .frase .frase-box {
+  margin-top: 50vh; }
+  #frase .frase .frase-box .frase-text {
+    font-family: "League Spartan";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 500%;
+    color: #fff; }
+  #frase .frase .frase-box .autor {
+    font-family: "Glacial Indifference";
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 6vw;
+    margin-top: -7vh;
+    font-size: 2vw; }
 
 /*# sourceMappingURL=main.css.map */
