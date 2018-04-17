@@ -1,6 +1,9 @@
+@import '_variables';
+
 body {
-    background-color: #000;
-    height: 1000px;
+    background-color: #d10000;
+    height: 2000px;
+    margin: 0;
 }
 
 .nav-hide {
@@ -14,10 +17,38 @@ body {
 .nav-show {
     display: block;
     position: fixed;
-    background: firebrick;
-    height: 50px;
+    background: #000;
+    height: auto;
     width: 100%;
+    padding: 0 10px;
     transition: opacity .6s ease-in-out;
     -moz-transition: opacity .6s ease-in-out;
     -webkit-transition: opacity .6s ease-in-out;
+    .brand-logo {
+        img {
+            width: 100px;
+            height: auto;
+            padding: 5px 0 0 0;
+        }
+    }
+    .nav {
+        margin:0;
+        float:right;
+        .list {
+            display: inline-block;
+            font-family: $default-font;
+            text-transform: uppercase;
+            margin: 15px 0;
+            a {
+                text-decoration: none;
+                color: #d10000;
+                padding: 10px;
+                transition: 0.3s background-color;
+                &:hover {
+                    background-color: #d10000;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
