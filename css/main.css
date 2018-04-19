@@ -2,7 +2,6 @@
 @import url("../fonts/glacial/stylesheet.css");
 body {
   background-color: #d10000;
-  height: 2000px;
   margin: 0;
   overflow-x: hidden; }
 
@@ -31,6 +30,9 @@ body {
     width: 100px;
     height: auto;
     padding: 5px 0 0 0; }
+  @media only screen and (max-width: 600px) {
+    .nav-show .brand-logo {
+      display: none; } }
   .nav-show .nav {
     float: right;
     margin: 0 20px !important; }
@@ -53,7 +55,7 @@ body {
   width: 100vw;
   height: 100vh; }
   #banner .banner .title {
-    padding-top: 25vh; }
+    padding: 25vh 0; }
     #banner .banner .title h1, #banner .banner .title h4 {
       text-align: center;
       color: #d10000;
@@ -64,21 +66,43 @@ body {
       font-size: 10vw; }
     #banner .banner .title h4 {
       font-size: 2vw; }
+    @media only screen and (max-width: 600px) {
+      #banner .banner .title {
+        padding: 45vh 0; } }
 
-#frase .frase .frase-box {
-  margin-top: 50vh; }
-  #frase .frase .frase-box .frase-text {
-    font-family: "League Spartan";
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 500%;
-    color: #fff; }
-  #frase .frase .frase-box .autor {
-    font-family: "Glacial Indifference";
-    text-transform: uppercase;
-    text-align: right;
-    margin-right: 6vw;
-    margin-top: -7vh;
-    font-size: 2vw; }
+#frase {
+  height: 100vh; }
+  #frase .frase .frase-box {
+    padding-top: 50vh; }
+    #frase .frase .frase-box .frase-text {
+      font-family: "League Spartan";
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 55px;
+      color: #fff; }
+      @media only screen and (max-width: 600px) {
+        #frase .frase .frase-box .frase-text {
+          font-size: 20px; } }
+    #frase .frase .frase-box .autor {
+      font-family: "Glacial Indifference";
+      text-transform: uppercase;
+      text-align: right;
+      margin-right: 6vw;
+      margin-top: -7vh;
+      font-size: 2vw; }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  color: #d10000;
+  font-family: "Glacial Indifference";
+  padding: 1px 0; }
+  .footer .container {
+    margin: 0 30px; }
+    .footer .container p {
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,12 +31,14 @@ sr.reveal('.banner-text',{
 },500);
 
 sr.reveal('.frase-text',{
+	viewFactor: 0.9,
 	duration: 1000,
 	origin: 'top',
 	reset: true
 });
 
 sr.reveal('.autor',{
+	viewFactor: 0.9,
 	duration: 1000,
 	origin: 'bottom',
 	reset: true,

@@ -1,8 +1,8 @@
 @import '_variables';
+@import '_mixins';
 
 body {
     background-color: #d10000;
-    height: 2000px;
     margin: 0;
     overflow-x: hidden;
 }
@@ -36,6 +36,9 @@ body {
             height: auto;
             padding: 5px 0 0 0;
         }
+        @include mobile {
+            display: none;
+        }
     }
     .nav {
         float: right;
@@ -65,7 +68,7 @@ body {
         width: 100vw;
         height: 100vh;
         .title {
-            padding-top: 25vh;
+            padding: 25vh 0;
             h1, h4 {
                 text-align: center;
                 color: #d10000;
@@ -79,21 +82,27 @@ body {
             h4 {
                 font-size: 2vw;
             }
+            @include mobile {
+                padding: 45vh 0;
+            }
         }
     }
 }
 
 #frase {
+    height: 100vh;
     .frase {
-        
         .frase-box {
-            margin-top: 50vh;
+            padding-top: 50vh;
             .frase-text {
                 font-family: $default-font;
                 text-transform: uppercase;
                 text-align: center;
-                font-size: 500%;
+                font-size: 55px;
                 color: #fff;
+                @include mobile {
+                    font-size: 20px;
+                }
             }
             .autor {
                 font-family: $sec-font;
@@ -103,6 +112,23 @@ body {
                 margin-top: -7vh;
                 font-size: 2vw;
             }
+        }
+    }
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    color: #d10000;
+    font-family: $sec-font;
+    padding: 1px 0;
+    .container {
+        margin: 0 30px;
+        p {
+            text-align: center;
         }
     }
 }
