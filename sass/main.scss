@@ -30,6 +30,8 @@ body {
     transition: opacity .6s ease-in-out;
     -moz-transition: opacity .6s ease-in-out;
     -webkit-transition: opacity .6s ease-in-out;
+    line-height: 4vh;
+    z-index: 1;
     .brand-logo {
         img {
             width: 100px;
@@ -93,7 +95,7 @@ body {
     height: 100vh;
     .frase {
         .frase-box {
-            padding-top: 50vh;
+            padding-top: 40vh;
             .frase-text {
                 font-family: $default-font;
                 text-transform: uppercase;
@@ -107,13 +109,68 @@ body {
             .autor {
                 font-family: $sec-font;
                 text-transform: uppercase;
-                text-align: right;
+                text-align: center;
                 margin-right: 6vw;
                 margin-top: -7vh;
-                font-size: 2vw;
+                font-size: 20px;
             }
         }
     }
+}
+
+#portfolio {
+    height: auto;
+    padding: 10vh 0;
+    background-color: #fff;
+    .portfolio {
+        -webkit-column-count: 2;
+        column-count: 2;
+        .img {
+            display: block;
+            margin: 0 auto;
+            width: 40vw;
+            height: auto;
+        }
+        .port-title {
+            font-family: $default-font;
+            text-transform: uppercase;
+            text-align: center;
+            color: #d10000;
+            margin: 0;
+            font-size: 2vw;
+        }
+        .port-text {
+            font-family: $sec-font;
+            text-align: center;
+            color: #000;
+            margin: 2% 20%;
+        }
+        .port-btn {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $default-font;
+            width: 30%;
+            background-color: #d10000;
+            color: #fff;
+            padding: 2% 0;
+            transition: 0.3s background-color;
+            &:hover {
+                -webkit-transform: translateY(0,-5);
+                -moz-transform: translateY(0, -5);
+                transform: translateY(0, -5);
+                background-color: #000;
+                color: #d10000;
+            }
+        }
+    }
+}
+
+#contato {
+    height: 50vh;
+    background-color: #b70000;
 }
 
 .footer {
