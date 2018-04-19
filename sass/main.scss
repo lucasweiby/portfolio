@@ -34,6 +34,11 @@ body {
     z-index: 1;
     .brand-logo {
         img {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             width: 100px;
             height: auto;
             padding: 5px 0 0 0;
@@ -50,6 +55,11 @@ body {
             font-family: $default-font;
             text-transform: uppercase;
             margin: 15px 0;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             a {
                 text-decoration: none;
                 color: #d10000;
@@ -100,7 +110,7 @@ body {
                 font-family: $default-font;
                 text-transform: uppercase;
                 text-align: center;
-                font-size: 55px;
+                font-size: 75px;
                 color: #fff;
                 @include mobile {
                     font-size: 20px;
@@ -111,7 +121,7 @@ body {
                 text-transform: uppercase;
                 text-align: center;
                 margin-right: 6vw;
-                margin-top: -7vh;
+                margin-top: -5vh;
                 font-size: 20px;
             }
         }
@@ -166,8 +176,75 @@ body {
 }
 
 #contato {
-    height: 50vh;
+    height: auto;
     background-color: #b70000;
+    padding: 25vh 0;
+    .desc {
+        font-family: $default-font;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        .contato-desc {
+            margin: 0;
+            font-size: 50px;
+        }
+        .contato-sub {
+            font-family: $sec-font;
+            font-weight: lighter;
+            margin: 1vh 0;
+        }
+        .contato-form {
+            margin: 0 auto;
+            width: 50%;
+            .contato-email {
+                width: 65%;
+                padding: 1vh;
+                border: none;
+                font-family: $sec-font;
+                text-transform: uppercase;
+                &::placeholder {
+                    font-family: $sec-font;
+                    text-transform: uppercase;
+                }
+            }
+            .contato-submit {
+                width: 30%;
+                float: right;
+                padding: 1vh;
+                border: none;
+                font-family: $default-font;
+                text-transform: uppercase;
+                transition: 0.3s background-color;
+                &:hover {
+                    background-color: #000;
+                    color: #d10000;
+                }
+            }
+        }
+    }
+    .social {
+        font-family: $default-font;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1vw;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 6px;
+            transition: 0.3s background-color;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
 }
 
 .footer {

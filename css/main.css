@@ -29,6 +29,11 @@ body {
   line-height: 4vh;
   z-index: 1; }
   .nav-show .brand-logo img {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100px;
     height: auto;
     padding: 5px 0 0 0; }
@@ -42,7 +47,12 @@ body {
       display: inline-block;
       font-family: "League Spartan";
       text-transform: uppercase;
-      margin: 15px 0; }
+      margin: 15px 0;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
       .nav-show .nav .list a {
         text-decoration: none;
         color: #d10000;
@@ -80,7 +90,7 @@ body {
       font-family: "League Spartan";
       text-transform: uppercase;
       text-align: center;
-      font-size: 55px;
+      font-size: 75px;
       color: #fff; }
       @media only screen and (max-width: 600px) {
         #frase .frase .frase-box .frase-text {
@@ -90,7 +100,7 @@ body {
       text-transform: uppercase;
       text-align: center;
       margin-right: 6vw;
-      margin-top: -7vh;
+      margin-top: -5vh;
       font-size: 20px; }
 
 #portfolio {
@@ -134,8 +144,64 @@ body {
         color: #d10000; }
 
 #contato {
-  height: 50vh;
-  background-color: #b70000; }
+  height: auto;
+  background-color: #b70000;
+  padding: 25vh 0; }
+  #contato .desc {
+    font-family: "League Spartan";
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+    #contato .desc .contato-desc {
+      margin: 0;
+      font-size: 50px; }
+    #contato .desc .contato-sub {
+      font-family: "Glacial Indifference";
+      font-weight: lighter;
+      margin: 1vh 0; }
+    #contato .desc .contato-form {
+      margin: 0 auto;
+      width: 50%; }
+      #contato .desc .contato-form .contato-email {
+        width: 65%;
+        padding: 1vh;
+        border: none;
+        font-family: "Glacial Indifference";
+        text-transform: uppercase; }
+        #contato .desc .contato-form .contato-email::placeholder {
+          font-family: "Glacial Indifference";
+          text-transform: uppercase; }
+      #contato .desc .contato-form .contato-submit {
+        width: 30%;
+        float: right;
+        padding: 1vh;
+        border: none;
+        font-family: "League Spartan";
+        text-transform: uppercase;
+        transition: 0.3s background-color; }
+        #contato .desc .contato-form .contato-submit:hover {
+          background-color: #000;
+          color: #d10000; }
+  #contato .social {
+    font-family: "League Spartan";
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+    #contato .social a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 1vw;
+      border: 1px solid #fff;
+      padding: 10px;
+      border-radius: 6px;
+      transition: 0.3s background-color; }
+      #contato .social a:hover {
+        background-color: #fff;
+        color: #000; }
 
 .footer {
   left: 0;
