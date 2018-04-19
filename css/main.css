@@ -128,11 +128,8 @@ body {
       background-color: #d10000;
       color: #fff;
       padding: 2% 0;
-      transition: 0.3s background-color; }
+      transition: 1s background-color; }
       #portfolio .portfolio .port-btn:hover {
-        -webkit-transform: translateY(0, -5);
-        -moz-transform: translateY(0, -5);
-        transform: translateY(0, -5);
         background-color: #000;
         color: #d10000; }
 
