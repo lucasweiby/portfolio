@@ -7,10 +7,10 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    width: 100%;
-    margin: 0 10px;
-}
+// .container {
+//     width: 100%;
+//     margin: 0 10px;
+// }
 
 .nav-hide {
     display: none;
@@ -34,14 +34,9 @@ body {
     z-index: 1;
     .brand-logo {
         img {
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
             width: 100px;
             height: auto;
-            padding: 5px 0 0 0;
+            padding: 5px;
         }
         @include mobile {
             display: none;
@@ -49,17 +44,12 @@ body {
     }
     .nav {
         float: right;
-        margin: 0 20px !important;
+        margin: 0 20px;
         .list {
             display: inline-block;
             font-family: $default-font;
             text-transform: uppercase;
             margin: 15px 0;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
             a {
                 text-decoration: none;
                 color: #d10000;
@@ -69,8 +59,20 @@ body {
                     background-color: #d10000;
                     color: #fff;
                 }
+                @include mobile {
+                    font-size: 10px;
+                }
+            }
+            @include mobile {
+                margin: 5px 0;
             }
         }
+        clear: both;
+        margin: 0 auto;
+        padding: 0;
+    }
+    @include mobile {
+        padding: 0;
     }
 }
 
@@ -114,6 +116,7 @@ body {
                 color: #fff;
                 @include mobile {
                     font-size: 20px;
+                    // margin-left: -6vw;
                 }
             }
             .autor {
@@ -123,6 +126,11 @@ body {
                 margin-right: 6vw;
                 margin-top: -5vh;
                 font-size: 20px;
+                @include mobile {
+                    margin-top: -2vh;
+                    font-size: 15px;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -172,6 +180,22 @@ body {
                 color: #d10000;
             }
         }
+        @include mobile {
+            column-count: 1;
+            .img {
+                width: 80vw;
+                padding: 1vh 0;
+            }
+            .port-title {
+                font-size: 5vw;
+            }
+            .port-text {
+                margin: 2% 10%;
+            }
+            .port-btn {
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -189,11 +213,17 @@ body {
         .contato-desc {
             margin: 0;
             font-size: 50px;
+            @include mobile {
+                font-size: 25px;
+            }
         }
         .contato-sub {
             font-family: $sec-font;
             font-weight: lighter;
             margin: 1vh 0;
+            @include mobile {
+                font-size: 15px;
+            }
         }
         .contato-form {
             margin: 0 auto;
@@ -207,6 +237,9 @@ body {
                 &::placeholder {
                     font-family: $sec-font;
                     text-transform: uppercase;
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
             }
             .contato-submit {
@@ -220,6 +253,17 @@ body {
                 &:hover {
                     background-color: #000;
                     color: #d10000;
+                }
+            }
+            @include mobile {
+                width: 100%;
+                margin: 0 1%;
+                .contato-email {
+                    width: 80%;
+                }
+                .contato-submit {
+                    float: none;
+                    margin: 2% 0;
                 }
             }
         }
