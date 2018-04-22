@@ -114,7 +114,7 @@ body {
                 font-family: $default-font;
                 text-transform: uppercase;
                 text-align: center;
-                font-size: 75px;
+                font-size: 4vw;
                 color: #fff;
                 @include mobile {
                     font-size: 20px;
@@ -176,7 +176,6 @@ body {
             background-color: #d10000;
             color: #fff;
             padding: 2% 0;
-            transition: 1s background-color;
             &:hover {
                 background-color: #000;
                 color: #d10000;

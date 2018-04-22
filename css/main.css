@@ -95,7 +95,7 @@ body {
       font-family: "League Spartan";
       text-transform: uppercase;
       text-align: center;
-      font-size: 75px;
+      font-size: 4vw;
       color: #fff; }
       @media only screen and (max-width: 600px) {
         #frase .frase .frase-box .frase-text {
@@ -147,8 +147,7 @@ body {
       width: 30%;
       background-color: #d10000;
       color: #fff;
-      padding: 2% 0;
-      transition: 1s background-color; }
+      padding: 2% 0; }
       #portfolio .portfolio .port-btn:hover {
         background-color: #000;
         color: #d10000; }
