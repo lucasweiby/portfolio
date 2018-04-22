@@ -28,3 +28,39 @@
     @content;
   }
 }
+
+@mixin scrollBar ($width, $bg-color, $thumb-color) {
+  ::-webkit-scrollbar {
+    width: $width;
+    background: $bg-color;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+}
+
+@mixin tooltip {
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+   
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+  }
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+    }
+  }
+}
+}

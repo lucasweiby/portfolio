@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
 }
 
+@include scrollBar (8px, #000, #d10000);
+
 // .container {
 //     width: 100%;
 //     margin: 0 10px;
@@ -203,10 +205,25 @@ body {
     height: auto;
     background-color: #b70000;
     padding: 25vh 0;
+    .arrow {
+        padding: 5vh 0;
+        width: 100vw;
+        text-align: center;
+        .arrow-up {
+            margin: 0 auto;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 6px;
+            transition: 0.3s background-color;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
     .desc {
         font-family: $default-font;
-        display: block;
-        margin: 0 auto;
         text-align: center;
         color: #fff;
         text-transform: uppercase;
