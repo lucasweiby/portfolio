@@ -53,21 +53,21 @@ sr.reveal('.port-title',{
 	duration: 1000,
 	origin: 'bottom',
 	reset: 'true',
-	delay: 1000
+	delay: 500
 },500);
 
 sr.reveal('.port-text',{
 	duration: 1000,
 	origin: 'bottom',
 	reset: 'true',
-	delay: 2000
+	delay: 600
 },500);
 
 sr.reveal('.port-btn',{
 	duration: 1000,
 	origin: 'bottom',
 	reset: 'true',
-	delay: 3000
+	delay: 700
 },500);
 
 
